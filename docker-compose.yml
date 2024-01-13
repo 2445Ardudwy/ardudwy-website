@@ -7,6 +7,7 @@ services:
       - ./project:/app
     env_file:
       - .env
+    restart: always
 
   nginx:
     build:
@@ -16,3 +17,4 @@ services:
       - "8081:80"
     depends_on:
       - app
+    restart: always
