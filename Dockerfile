@@ -20,6 +20,12 @@ COPY ./project /app
 # Expose port 8000 for Daphne
 EXPOSE 8000
 
+# Run migrations
+RUN python manage.py migrate
+
+# Collect static files
+RUN python manage.py collectstatic --noinput
+
 # Run Daphne ASGI server
 CMD ["daphne", "-b", "0.0.0.0", "-p", "8000", "core.asgi:application"]
 
