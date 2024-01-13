@@ -5,6 +5,8 @@ services:
     build: .
     volumes:
       - ./project:/app
+      - static_volume:/app/src
+      - media_volume:/app/media
     env_file:
       - .env
     restart: always
@@ -17,4 +19,11 @@ services:
       - "8081:80"
     depends_on:
       - app
+    volumes:
+      - static_volume:/static
+      - media_volume:/media
     restart: always
+
+volumes:
+  static_volume:
+  media_volume:
