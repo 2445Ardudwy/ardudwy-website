@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWD7JQSXT1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CWD7JQSXT1');
+    </script>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@2445ardudwy">
+    <meta name="twitter:title" property="og:title" content="2445 (Ardudwy) Sqn">
+    <meta name="twitter:url" property="og:url" content="https://www.2445ardudwy.co.uk">
+    <meta name="twitter:description" property="og:description" content="2445 (Ardudwy) Sqn ATC Llanbedr, offers exclusive activities & opportunities, like, Flying, Shooting and many many more.">
+    <!-- Open Graph data -->
+    <meta itemprop="name" content="2445 (Ardudwy) Sqn">
+    <meta itemprop="description" content="2445 (Ardudwy) Sqn ATC Llanbedr, offers exclusive activities & opportunities, like, Flying, Shooting and many many more.">
+    <meta property="og:locale" content="en_gb">
+    <meta property="og:type" content="website">
+    <!-- Cookies declaration -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4ae51baf-071b-4f16-8952-82e997608dcc" data-blockingmode="auto" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static '/img/icon.ico' %}">
+    <title>{% block title %}{% endblock %}</title>
+    {% block customCSS %}
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static '/css/main.base.css' %}">
+    {% block customScripts %}
+    {% endblock %}
+    <script src="https://kit.fontawesome.com/30c82b1526.js" crossorigin="anonymous"></script>
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/4ae51baf-071b-4f16-8952-82e997608dcc/cd.js" type="text/javascript" async></script>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="main_header_area">
+        <div class="container">
+          <nav id="navigation1" class="navigation">
+            <div class="nav-header">
+              <a class="nav-brand" href="{% url 'mainIndex' %}"><img src="{% static 'img/logo.png' %}" ></a>
+              <div class="nav-toggle"></div>
+            </div>
+            <div class="nav-menus-wrapper">
+              <ul class="nav-menu align-to-right">
+                <li><a href="{% url 'mainIndex' %}">Home</a></li>
+                <li><a href="{% url 'meetStaff' %}">Meet staff</a></li>
+                <li>
+                  <a href="">#whatwedo</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="{% url 'at' %}">Adventure Training</a></li>
+                    <li><a href="{% url 'camps' %}">camps</a></li>
+                    <li><a href="{% url 'flying' %}">flying and gliding</a></li>
+                    <li><a href="{% url 'shooting' %}">shooting and marksmanship</a></li>
+                    <li><a href="{% url 'sport' %}">sport</a></li>
+                    <li><a href="{% url 'education' %}">Training and Education</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">news & events</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="{% url 'news' %}">news</a></li>
+                    <li><a href="{% url 'gallery' %}">gallery</a></li>
+                    <li><a href="{% url 'resources' %}">Recourse Downloads</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">join us</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="{% url 'joincadet' %}">join as a cadet</a></li>
+                    <li><a href="{% url 'joinstaff' %}">join as a staff volunteer</a></li>
+                    <li><a href="{% url 'joincommittee' %}">Information for parents</a></li>
+                  </ul>
+                <li><a href="{% url 'contactus' %}">contact us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="behind-main-menu">
+    </div>
+    {% block mainImage %}
+    {% endblock %}
+    <div class="main-content {% block background %}{% endblock %}">
+    {% block mainContent %}
+    {% endblock %}
+    </div>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span><a href="https://www.google.com/maps/place/2445+(Ardudwy)+SQN+Air+Cadets/@52.8183493,-4.1208563,17z/data=!3m1!4b1!4m5!3m4!1s0x48659d38afadc6a3:0xe163b8dff678c2c8!8m2!3d52.8183493!4d-4.1186676" target="_blank">2445 (Ardudwy) SQN, Llanbedr, LL45 2EZ</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span><a href="tel:+441341241838">01341 241838</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span><a href="mailto:2445@rafac.mod.gov.uk">2445@rafac.mod.gov.uk</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="{% url 'mainIndex' %}"><img src="{% static '/img/RAFAC-Ardudwy-White.png' %}" class="img-fluid" alt="logo"></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    2445 (Ardudwy) SQN, Llanbedr, offers exclusive activities & opportunities like, Flying, Shooting, Adventure training... Dare to face the challenge?
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="https://facebook.com/2445ardudwy/" target="_blank"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="https://twitter.com/2445ardudwy/" target="_blank"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="https://instagram.com/2445ardudwy/" target="_blank"><i class="fab fa-instagram instagram-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="{% url 'mainIndex' %}">Home</a></li>
+                  <li><a href="{% url 'joincadet' %}">Join us</a></li>
+                  <li><a href="{% url 'meetStaff' %}">Who we are</a></li>
+                  <li><a href="{% url 'contactus' %}">Contact us</a></li>
+                  <li><a href="{% url 'at' %}">#WHATWEDO</a></li>
+                  <li><a href="https://www.bader.mod.uk" target="_blank">Bader</a></li>
+                  <li><a href="{% url 'news' %}">News & Events</a></li>
+                  <li><a href="https://cadets.bader.mod.uk" target="_blank">Cadet Portal</a></li>
+                  <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2022, All Right Reserved 2445 (Ardudwy) SQN. Design by <a href="https://www.github.com/miki5421", target="_blank">Mikolaj Adamkiewicz</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script  src="{% static '/js/main.base.js' %}"></script>
+    {% block bottomJS %}
+    {% endblock %}
+  </body>
+</html>

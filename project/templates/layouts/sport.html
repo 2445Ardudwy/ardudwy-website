@@ -1,0 +1,73 @@
+{% extends "partials/base/base.html"%}
+{% load static %}
+{% block title %}
+#WHATWEDO - Sport
+{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{% static 'css/main.whatwedo.css' %}">
+{% endblock %}
+{% block mainImage %}
+<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/img/A6B8EE00-F50D-47A7-B2C9-3A1E6EBA417F.png' %}" class="d-block w-100 cp-top" >
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block background %}
+True
+{% endblock %}
+{% block mainContent %}
+<div class="main-whatwedo">
+  <h4 class="text-center text-uppercase subtitle">Feeling competitive?</h4>
+  <h1 class="text-center bold text-uppercase title">Sports</h1>
+  <p>As an air cadet you can take part in seven main sports at different levels - athletics, cross country, football, rugby, hockey, netball and swimming. Whatever you do it'll help improve your physical fitness levels and your team skills. If you're good enough at your favourite sport we'll notice, and can help you take it to the next level.</p>
+  <p>Sport is an important element of being a member of the Air Cadets; we encourage all cadets to participate in sports activities because we want them to be fit and healthy, but we also participate to foster teamwork and a healthy sense of competitiveness.</p>
+  <p>During their parade evenings, most squadrons will have a sports night at least once a month, but there are plenty of other chances as well. Football, hockey, netball, rugby, athletics, cross country, swimming, 6 a side football, and touch rugby will all be held annually by the Wing.</p>
+  <p>We usually invite all cadets to these sports trials, and from there, cadets will be selected to represent the Wing when they compete against other Wings in the Central & East Region. Cadets who excel in a specific sport may be selected to represent the Region or perhaps the Corps.</p>
+  <h3>Athletics</h3>
+  <p>Athletics is without a doubt the most popular sport among cadets. It's hardly surprising, given the variety of events available, which range from sprinting to high jump to discus throwing. You'll constantly want to do better, and we'll help you find the desire to push your abilities to their limits.</p>
+  <h3>
+  Cross country</h2>
+  <p>Cross-country running is unlike anything else. Each run is unique, and even if you know the route, the weather may suddenly add to the difficulty. To remain ahead of the group, you'll need to utilise genuine talent to handle diverse terrains (which aren't always perfect for running).</p>
+  <h3>
+  Football</h2>
+  <p>What are our thoughts on the 'beautiful game'? We know a lot of you enjoy football, and if you've ever played it, you'll understand what it means to be a 'team player.' Working as a team and understanding your particular abilities are critical, just as they are for air cadets.</p>
+  <h3>
+  Rugby</h2>
+  <p>The sport where it's all about giving it your all! Rugby will challenge and reward you if you can take the knocks and have a competitive streak. If you've ever played it, you'll know it's a difficult sport to master...and much more difficult to defeat.</p>
+  <h3>
+  Hockey</h2>
+  <p>All female cadets are invited! Hockey might be the most enjoyable sport in the Air Cadets. It's fast-paced, aggressive, and filled with genuine excitement for the participants. Hockey is a popular cadet sport, and you'll experience the same competitive atmosphere on the ice. Your squad mates will become some of your closest friends during your time in the cadets.</p>
+  <h3>
+  Netball</h2>
+  <p>Girls are more likely to participate in this sport than they are in hockey. Netball evolved from basketball and is now considered the female version, yet it is no less competitive. Netball is a true passion for its participants, and it's played early in the year inside the Air Cadets. It's fantastic exercise and a great opportunity to meet new people.</p>
+  <h3>
+  Swimming</h2>
+  <p>You may be aware that swimming is a terrific form of fitness, but did you realise that it is also the cadets' most successful event? The ATC has won 29 annual tri-service meetings in a row, defeating both the Army and the Navy!</p>
+  <p>Each year, you'll do the most of your swimming in late October. It's a fantastic sport in which you may participate on a variety of levels. Being in the water is a lot of fun, and it'll probably bring out some aquatic abilities you didn't know you possessed. Push yourself, experiment with new techniques, and you might be shocked at how talented you are.</p>
+  <div class="whatwedo-images">
+    <div class='parent'>
+      <div class='child'>
+        <img src="{% static '/img/AA810321-1D7B-4D0D-88BD-5B33A35B42EA.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/C3A8296B-CB73-497B-8BE8-4583A67F2580.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/6511638A-1F78-4CA7-A107-898C88E653D0.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/26538E56-025C-40F3-A649-9303D7CAFE32.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/E743A63D-8B42-42BC-9362-1C9AD993C0CA.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/3FF92DAF-9CD1-428E-98E3-AD4576940E89.png' %}" >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

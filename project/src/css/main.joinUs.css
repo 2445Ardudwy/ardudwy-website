@@ -1,0 +1,23 @@
+.bold {
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+.title {
+  font-size: 3vh;
+  padding-bottom: 25px;
+}
+
+.mainContentJoin p {
+  font-size: 1.4vh;
+}
+
+.mainContentJoin a {
+  color: #C60C30;
+  text-decoration: none;
+}
+
+.mainContentJoin a:hover {
+  color: #002F5F;
+  text-decoration: underline;
+}

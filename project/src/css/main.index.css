@@ -1,0 +1,46 @@
+.main-info-crads {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.main-info-crads img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: bold;
+  color: #5482AB;
+}
+
+.main-text {
+  max-width: 1200px;
+  /* text-align: center; */
+  margin: 0 auto;
+  padding: 9px 0;
+}
+
+.text-link {
+  color: #C60C30;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: #002F5F;
+  text-decoration: underline;
+}
+
+.card-title {
+  color: #5482AB;
+  font-weight: bold;
+}
+
+.fun {
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+
+.red {
+  color: #C60C30;
+}

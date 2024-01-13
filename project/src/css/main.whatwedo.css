@@ -1,0 +1,61 @@
+.main-whatwedo p {
+  font-size: 1.4vh;
+}
+
+.content-subtitle {
+  margin-bottom: 0px;
+}
+
+.main-whatwedo a {
+  color: #C60C30;
+  text-decoration: none;
+}
+
+.main-whatwedo a:hover {
+  color: #002F5F;
+  text-decoration: underline;
+}
+
+.parent {
+  height: 100%;
+  margin: 2vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.child {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5vw;
+  margin: auto;
+}
+
+.child img {
+  height: 23vh;
+}
+
+.main-whatwedo ul {
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+
+.main-whatwedo ul li {
+  font-size: 1.4vh;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #002F5F;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3,
+h4 {
+  color: #5482AB;
+  font-weight: bold;
+}

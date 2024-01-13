@@ -1,0 +1,62 @@
+{% extends "partials/base/base.html"%}
+{% load static %}
+{% block title %}
+#WHATWEDO - Adventure Training
+{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{% static '/css/main.whatwedo.css' %}">
+{% endblock %}
+{% block mainImage %}
+<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/img/44A762FF-5A14-4BB0-8BE1-1E8CF582CA6D.png' %}" class="d-block w-100 cp-top" >
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block background %}
+True
+{% endblock %}
+{% block mainContent %}
+<div class="main-whatwedo">
+  <h4 class="text-center subtitle">Venture Adventure</h4>
+  <h1 class="text-center title">Adventurous training</h1>
+  <p>Adventure Training is an important element of the Air Cadet training programme, and it's where you'll make new friends and learn to rely on the people you're with to get the job done. It also allows you to demonstrate your leadership abilities.</p>
+  <p>Remember that nothing is obligatory, regardless of your own preferences. If climbing isn't your thing, kayaking could be. Our squadron has several trained instructors who will be able to locate something that is suitable for you.</p>
+  <p>Kayaking, hill walking, camping, caving, mountain biking, offshore sailing, and winter sports are just a few of the things you'll get to do between local activities and excursions to camps.</p>
+  <p>The Air Cadets have two specialised Adventure Training Centres, one in Fairbourne, North Wales, and the other in Windermere, Lake District, where the Wing organises week-long courses where you may try a variety of activities.</p>
+  <h3>Climbing & Abseiling</h3>
+  <p>Climbing may be immensely gratifying if you have a mind for heights, as anybody who has attempted it will attest. It's not simply a physical effort; it also demands a high level of attention and judgement. You rely on others, and they rely on you, therefore teamwork is essential. You're in good hands since all cadet climbing is overseen by properly experienced instructors.</p>
+  <p>Holding on might be more difficult than it appears. Climbing works every muscle in your body, strengthening your upper body, arm, and even finger muscles via grasping. It also promotes the growth of leg muscles.</p>
+  <p>Once you've gotten through the sore muscles, you'll notice that you can ascend faster and manage hazards and overhangs with ease. You may also go to Harlech climbing walls where you may practise your skills. Then put your new abilities to the test on a typical climbing trip with the squadron. That's when you feel truly accomplished: sitting on top of a steep wall of rock that you and your companions have climbed with your own strength and cooperation.</p>
+  <h3>Mountain Biking</h3>
+  <p>Mountain biking is a favourite hobby with cadets and staff alike, and we have certified instructors on staff. To begin, you'll master the fundamentals of keeping your bike in excellent operating order, as well as basic handling abilities on relatively level terrain before graduating to more difficult terrain.</p>
+  <h3>Paddlesport</h3>
+  <p>Some of the most popular paddle sports in the Corps include kayaking, canoeing, and stand up paddle boarding. For individuals who want to advance, there are a variety of credentials available, ranging from 1* to Paddlesport Leader and maybe even Assessor.</p>
+  <h3>Hill Walking</h3>
+  <p>Nothing beats getting out in the fresh air and challenging oneself to walk or struggle to the summit of a mountain before taking in the view. As a member of the air cadets, you'll learn how to read a map and navigate, how to design routes, what equipment to bring, and how to be safe on the slopes. Training begins in lowland locations, and as you gain skill, you may find yourself conquering mountains in North Wales, the Lake District, or Scotland.</p>
+  <div class="whatwedo-images">
+    <div class='parent'>
+      <div class='child'>
+        <img src="{% static '/img/788D5450-A5E0-4CEB-8685-73C5B0FD706E.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/20746820-8700-49D7-9171-A2B02C841E1B.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/DEFEFC53-3658-49CF-93AB-C8E24BEBF4B9.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/27AB6BF8-66AE-4C87-8620-98F42E0FBD6F.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/464D51E0-3914-4D99-8A78-1D306159CC9E.png' %}" >
+      </div>
+      <div class='child'>
+        <img src="{% static '/img/293CEE2C-E43E-4221-981F-FF72534BDB65.png' %}" >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

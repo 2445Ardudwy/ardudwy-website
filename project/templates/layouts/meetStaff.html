@@ -1,0 +1,36 @@
+{% extends "partials/base/base.html"%}
+{% load static %}
+
+{% block title %}
+Meet Staff
+{% endblock %}
+
+
+{% block customCSS %}
+<link rel="stylesheet" href="{% static '/css/main.meetStaff.css' %}">
+{% endblock %}
+
+{% block background %}
+True
+{% endblock %}
+
+{% block mainContent %}
+<div class="row meet-staff">
+
+  {% for staff in staffMembers %}
+  <div class="column">
+    <div class="card">
+      <img src={{staff.image.url}} alt="{{staff.first_name}} {{staff.last_name}}" class="staff-image" style="width:100%">
+      <div class="container">
+        <p class="staff-name">{{staff.rank}} {{staff.last_name}}, {{staff.first_name}}</p>
+        <p class="staff-position">{{staff.get_position_display}}</p>
+        {% if staff.email %}
+        <p class="staff-email">{{staff.email}}</p>
+        {% endif %}
+        <p class="staff-description">{{staff.bio}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

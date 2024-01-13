@@ -1,0 +1,51 @@
+/* Three columns side by side */
+.meet-staff .column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .meet-staff .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 8px 16px 0;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.staff-name {
+  color: var(--logo-2);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.staff-position {
+  color: var(--nav-2);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.staff-email {
+  color: var(--nav-2);
+  font-size: 16px;
+}

@@ -1,0 +1,46 @@
+{% extends "partials/base/base.html"%}
+{% load static %}
+{% block title %}
+Join Us - Staff Volunteer
+{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{% static 'css/main.joinUs.css' %}">
+{% endblock %}
+{% block mainImage %}
+<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/img/19C41982-39E5-4215-9D0C-BAA9F5604FFA.png' %}" class="d-block w-100 cp-top" >
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block background %}
+True
+{% endblock %}
+{% block mainContent %}
+<div class="mainContentJoin">
+  <h4 class="text-center subtitle">Sign up today to help change lives</h4>
+  <h1 class="text-center title">Join as an Adult volunteer</h1>
+  <p>Are you over the age of 20? Are you looking for a new challenge? Do you want to improve your talents, leadership abilities, and qualifications?</p>
+  <p>We regularly evaluate our previous accomplishments, make adjustments to meet today's difficulties, and develop plans for the future in the Air Cadets, all while protecting the safety and well-being of everyone in the organisation. Our Adult Volunteers are responsible for a large portion of the planning. As the backbone of our organisation, we're always on the lookout for high-calibre volunteers to assist us in planning, organising, and running the events that are so vital in the lives of our young members.</p>
+  <p>Our volunteer workforce is made up of a diverse group of people with diverse experiences and interests. Naturally, if you have direct experience dealing with children or any related talents, such as aviation or engineering, you would be very welcome to assist us in our educational efforts. However we need people with a huge range of skills and experiences to support all aspects of the work we do.</p>
+  <p>Although these are not required because we will teach and assist you at every level, we do require a number of personal traits, like patience, maturity, and responsibility, as well as an awareness of young people and their needs. You don't have to be an athlete, but having a decent degree of physical fitness can help you keep up with the cadets!</p>
+  <h3>Are you Officer or SNCO material?</h3>
+  <p>We rely on volunteers to assist us run our organisation as efficiently as possible. Being well organised is a given, as is having solid managerial and administrative abilities, as well as the capacity to listen to concerns and respond delicately and effectively.</p>
+  <p>If you demonstrate your abilities in these areas, you may find yourself with increased responsibilities and progressing up the ranks as an officer or senior non-commissioned officer (SNCO). Of course, you must first apply as a Civilian Instructor and then attend selection interviews at Wing and Regional Headquarters, but we will walk you through the process and assist you!</p>
+  <h3>Could you be a Civilian Instructor?</h3>
+  <p>Civilian Instructor is the most prevalent volunteer title in Air Cadets; it's a versatile profession that allows you to put your abilities to good use. You may volunteer as often or as little as you like, and no formal credentials are required - just passion.</p>
+  <p>Your contribution is critical to our cadets' success. Your hard work and devotion will be rewarded in the accomplishments you inspire among our members. You'll participate in numerous squadron events and have the same opportunity as cadets to build your leadership skills and earn credentials in things like mountain leadership, First Aid, and NVQs that may be beneficial in your career. You'll enjoy yourself just as much as the cadets do!</p>
+  <p>It doesn't end there, either. You can apply to be a sergeant or an officer if you like. You may claim up to 28 days of voluntary allowance per year as an Air Cadet officer, and you can work your way up through the ranks in the same way as you would in the RAF.</p>
+  <p>Our volunteers feel that helping young people reach their full potential gives them a great sense of accomplishment. Why don't you give it a shot?</p>
+  <h3>Could you be part of our Chaplaincy Team?</h3>
+  <p>Our objective for chaplaincy, as a unique job in the organisation, is to offer adequate pastoral care for all Air Cadets personnel, regardless of religious belief or status./p>
+  <p>You can apply to be a chaplain at any of our ATC squadrons around the country if you're a minister or priest of any faith. There are positions available for lay ministers like as readers, lay preachers, and others who perform an authorised ministry in the parish, circuit, or district's pastoral activity.</p>
+  <p>Clerics from other religions may be appointed when needed to satisfy the requirements of cadets of non-Christian faiths. Although you do not wear a uniform as an Honorary Chaplain in the ATC, you are identified by a Chaplain's insignia worn on your lapel and a bigger version worn on your preaching scarf.</p>
+  <p>Your job in the squadron is to provide moral and spiritual advice and leadership to cadets and members of the staff. A chaplain's obligation is to make a monthly visit to your unit to lead what is known as "the Padre's hour" and perform the official Enrolment Service, which is held when new cadets are welcomed into full membership of the organisation.</p>
+  <h3>What to do next</h3>
+  <p>Fill out the form on our <a href="{% url 'contactus' %}">Contact Us</a> page, and we will get get in touch.</p>
+  <p>(Please note that the Squadron is only manned part time so your message may not be picked up for a couple of days)</p>
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "partials/base/base.html"%}
+{% load static %}
+{% block title %}
+2445 (Ardudwy) SQN
+{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{% static '/css/main.index.css' %}">
+{% endblock %}
+{% block mainImage %}
+<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/img/8F6C773F-2E5E-489C-A6E6-78383736637F.png' %}" class="d-block w-100" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/img/71FCD425-51CC-4A2E-AC38-70A17F1F7535.png' %}" class="d-block w-100" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/img/868A24C8-8D16-4402-AD1E-CE286A2BC840.png' %}" class="d-block w-100" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/img/1572BCAB-7D6F-4139-95F2-2361662B3422.png' %}" class="d-block w-100" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/img/DDD872BB-9A1C-407C-9E95-365A7AABC12B.png' %}" class="d-block w-100" >
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block background %}
+True
+{% endblock %}
+{% block mainContent %}
+{{request.user.profile.first_name}}
+<h1 class="text-center title">Welcome to 2445 (Ardudwy) Squadron RAFAC</h1>
+<h2 class="text-center red">Start Your Journey With The Air Cadets Today</h2>
+<p class="main-text">Are you looking for some excitement, adventure, fantastic experiences, and new friends? Are you seeking for a way to gain an advantage in life? Then the Royal Air Force Air Cadets are for you! We are a UK-wide cadet force with over 40,000 members aged 12 to 20 years old, as well as 20,000 adult volunteers aged 20 and over.</p>
+<p class="main-text">The Royal Air Force Air Cadets' (RAFAC) mission is to promote and encourage a practical interest in aviation and the Royal Air Force among young people, to provide training that will be useful in the Services and in civilian life, to encourage the spirit of adventure, and to develop leadership and good citizenship qualities.</p>
+<p class="main-text">The RAFAC is a youth organisation that consists of two parts: the Air Training Corps (ATC) and the Combined Cadet Force (CCF). It is supported by the Royal Air Force and the Ministry of Defence.</p>
+<p class="main-text">Learn to fly, gain leadership skills, compete in sporting events, become a target shooting marksman, join a band, learn about aviation and aerospace, earn BTEC qualifications, earn Duke of Edinburgh Awards, and attend camps and courses in the UK and abroad are just a few of the many activities and opportunities available to Air Cadets members.</p>
+<p class="main-text text-center fun red">There's one more thing to mention: it's a LOT OF FUN!</p>
+<div class="main-info-crads">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="{% static '/img/551FC448-8FAF-4C15-8AAA-1B038DD19A22.png' %}" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title text-center">#WHATWEDO</h5>
+          <p class="card-text text-center">Every weekend is a once in a lifetime experience for our cadets. Teenagers across No 2 Welsh Wing do amazing things, from flying with the RAF to completing the Duke of Edinburgh Award.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{% static '/img/8B1F5EE8-43AA-4E3A-A45F-EA2841E5876B.png' %}" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title text-center">ADULT VOLUNTEERS</h5>
+          <p class="card-text text-center">Our organization couldn’t be what it is without the support of thousands of adult volunteers. Whether you can give a little or a lot of time, anyone over 20 can help shape a young person’s future.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{% static '/img/3E41E42B-16A1-428F-A0B6-653550EC2881.png' %}" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title text-center">EXPERIENCE</h5>
+          <p class="card-text text-center">Whether you’re into rock-climbing, want to experience the thrill of aerobatics, jet off on overseas adventures or gain nationally recognised qualifications, we’ve got you covered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

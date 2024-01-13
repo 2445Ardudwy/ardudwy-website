@@ -1,0 +1,39 @@
+{% extends "partials/base/base.html"%}
+{% load static %}
+{% block title %}
+Join Us - Information for parents
+{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{% static 'css/main.joinUs.css' %}">
+{% endblock %}
+{% block mainImage %}
+<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/img/A4D91BD4-A7BB-4876-A2C1-AA2A59FE07C7.png' %}" class="d-block w-100 cp-top" >
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block background %}
+True
+{% endblock %}
+{% block mainContent %}
+<div class="mainContentJoin">
+  <h4 class="text-center subtitle">Sign up today to help change lives</h4>
+  <h1 class="text-center title">Information for parents</h1>
+  <p>Why are there air cadets? It's a reasonable question, but everyone who has participated as a cadet, adult volunteer, or parent knows how unique the organisation is. It provides an inspiring and safe place for young people from all walks of life to get active, acquire new skills, and meet new friends.</p>
+  <p>It does not interfere with their school obligations, and cadets depart with an useful set of experiences and strong personal ethics that they may put to good use at university or in their chosen vocation. Although some cadets do pursue a career in the military, they are not obligated to re-enlist after leaving the organisation. Our primary goal is to help them grow into self-assured, energetic young people.</p>
+  <p>We'll provide your son or daughter with a variety of activities to participate in, as well as every chance to develop their abilities and confidence, all under the supervision of our fully experienced volunteer team. We hope kids stay with us for a long time and enjoy their membership - our volunteer team is always there to help parents with any questions or concerns they may have.</p>
+  <h3>Your responsibilities</h3>
+  <p>We ask for as little as possible from parents. We offer the majority of the equipment and urge cadets to be self-sufficient and maintain a clean uniform. Don't be offended if they say they don't want you to iron their shirt since there is a certain way to do it and they are encouraged to do it themselves! However, you are responsible for their uniform, which is worth roughly £200 and is borrowed; it should only be worn for air cadet events and must be returned at the conclusion of their stay with us.</p>
+  <p>Footwear is not provided, therefore you will need to supply your own shoes or boots. Beyond that, your primary role is to get your son or daughter to squadron meetings on time and to encourage them as they advance. Any further participation, on the other hand, is always welcome.</p>
+  <h3>Funding</h3>
+  <p>Every organisation need funds. We are fortunate in that the RAF pays for uniforms, facilities, flying, and a variety of other activities. Each cadet contributes a modest fee to help support the numerous activities they participate in. Extra expenditures may be incurred as a result of national and international camps and excursions, but these will always be kept to a minimum. We want the organisation to be accessible to everyone, and staff are always delighted to talk to parents about financial concerns.</p>
+  <p>The remainder of the needed cash must be provided by the squadron, mostly through the fundraising efforts of each squadron's Civilian Committee. We're constantly on the lookout for parents who want to become involved within the Committee or volunteer!</p>
+  <h3>
+  What to do next</h1>
+  <p>Fill out the form on our <a href="{% url 'contactus' %}">Contact Us</a> page, and we will get get in touch.</p>
+  <p>(Please note that the Squadron is only manned part time so your message may not be picked up for a couple of days)</p>
+</div>
+{% endblock %}

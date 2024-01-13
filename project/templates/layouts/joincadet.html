@@ -1,0 +1,39 @@
+{% extends "partials/base/base.html"%}
+{% load static %}
+{% block title %}
+Join Us - Cadet
+{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{% static 'css/main.joinUs.css' %}">
+{% endblock %}
+{% block mainImage %}
+<div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/img/710CB4C8-2B1C-44AC-8788-390F4DFBDD47.png' %}" class="d-block w-100 cp-top" >
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block background %}
+True
+{% endblock %}
+{% block mainContent %}
+<div class="mainContentJoin">
+  <h4 class="text-center text-uppercase subtitle">Change your life today</h4>
+  <h1 class="text-center bold text-uppercase title">Join as a Cadet</h1>
+  <p>So, are you ready to take the initial step toward all of the rewards and opportunities that the air cadets can provide?</p>
+  <p>It's crucial to note that we're not a service recruitment organisation (though it's nice if you decide to join afterwards). We're just interested in you and your potential, and we'll make sure you get the most out of your cadet experience.</p>
+  <p>Are you worried about fitting in? Equality is a cornerstone of the Air Cadets' values. You may join the cadet experience regardless of your nationality, background, or ability, whether you're male or female, and if you're between the ages of 13 and 17 while starting school year 8 (England & Wales), S2 (Scotland), Yr 9 (Northern Ireland) you can join us.</p>
+  <p>Because the maximum age for entrance is 17, you can wish to join us at any moment between the ages of 12 and 17. If you are beyond that age range but still want to participate in our programmes, you can become a volunteer. Find out more about volunteering in our <a href="{% url 'joinstaff' %}">Volunteer Section</a></p>
+  <h3>What’s in it for you?</h3>
+  <p>Aside from flying, what else is there to do? Sports, target shooting, adventure training, and having a good time? You'll quickly discover that being an air cadet is its own reward - you'll see the results of your own efforts all the time, as you build on your accomplishments and gain BTECs and DoE Awards. You'll be asked to participate in as many of the events as possible, but you won't need much convincing with what's on offer!</p>
+  <p>As a 'military' youth organisation, we have high standards to uphold, and you'll naturally take pleasure in your uniform (which we provide) and appearance. You'll be well mannered and self-disciplined. You'll be a part of an organisation you'll be proud of.</p>
+  <h3>What are you waiting for!</h3>
+  <p>Potential cadets (preferably accompanied by a parent or guardian) are welcome to come in for a personal visit during one of their Parade Nights, which are conducted twice a week. Come along and see if you enjoy it - you don't have to join, but you should at least see what you're losing out on.</p>
+  <p>Don’t be shy about taking that first step – it may be the best thing you’ve ever done. Go for it!</p>
+  <h3>What to do next</h3>
+  <p>Fill out the form on our <a href="{% url 'contactus' %}">Contact Us</a> page, and we will get get in touch.</p>
+  <p>(Please note that the Squadron is only manned part time so your message may not be picked up for a couple of days)</p>
+</div>
+{% endblock %}
